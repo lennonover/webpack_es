@@ -3,11 +3,11 @@
 
 ## 需求列表 
 
-1、html文件引入的js文件，需要使用es6、es7的语法；
+1、html 文件引入的 js 文件，需要使用 es6、es7 的语法；
 
-2、使用的语法里，除了常规的es6语法外，还包括例如Promise、async等特殊特性，要求可以转换。
+2、使用的语法里，除了常规的es6语法外，还包括例如 Promise、async 等特殊特性，要求可以转换。
 
-注：babel默认只转js语法，而不转换新的API，例如Iterator、Generator、Set、Maps、Proxy、Reflect、Symbol、Promise等全局对象，以及一些定义在全局对象上的方法（比如Object.assign）。所以我们必须引入额外的babel插件来解决这个问题
+注：babel 默认只转 js 语法，而不转换新的 API，例如 Iterator、Generator、Set、Maps、Proxy、Reflect、Symbol、Promise 等全局对象，以及一些定义在全局对象上的方法（比如 Object.assign）。所以我们必须引入额外的babel插件来解决这个问题
 
 ## 步骤
 
@@ -32,13 +32,13 @@ index.html
 ## 说明 
 
 
-关于loader的写法很简单，唯一区别是在哪里设置babel的配置。
+关于loader的写法很简单，唯一区别是在哪里设置 babel 的配置。
 
 ---
 
 第一种办法：
 
-写在 ``.babelrc``文件里，就像我们一般使用babel那样，文件内容如下。
+写在 ``.babelrc`` 文件里，就像我们一般使用 babel 那样，文件内容如下。
 
 ```
 {
@@ -51,7 +51,7 @@ index.html
 }
 ```
 
-此时loader写法如下（以上以下代码已省略）：
+此时 loader 写法如下（以上以下代码已省略）：
 
 ```
 module: {
@@ -69,7 +69,7 @@ module: {
 
 ---
 
-第二种写法，不使用 ``.babelrc`` 文件，而是直接写在babel-loader里。
+第二种写法，不使用 ``.babelrc`` 文件，而是直接写在 babel-loader 里。
 
 此时loader写法如下（以上以下代码已省略）：
 
