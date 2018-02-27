@@ -55,7 +55,7 @@ index.html
 
 ```
 module: {
-    // loader放在rules这个数组里面
+    // loader 放在 rules 这个数组里面
     rules: [
         {
             test: /\.js$/,
@@ -75,7 +75,7 @@ module: {
 
 ```
 module: {
-    // loader放在rules这个数组里面
+    // loader 放在 rules 这个数组里面
     rules: [
         {
             test: /\.js$/,
